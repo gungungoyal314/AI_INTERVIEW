@@ -1,0 +1,17 @@
+.main {
+    background-color: #0E1117;
+}
+
+h1 {
+    text-align:center;
+    color:white;
+}
+
+.stButton button {
+    background:#4CAF50;
+    color:white;
+    border-radius:10px;
+    height:50px;
+    width:100%;
+    font-size:18px;
+}

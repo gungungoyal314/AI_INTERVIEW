@@ -6,12 +6,25 @@ load_dotenv()
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
-questions = [
-    "What is Machine Learning?",
-    "What is Overfitting?",
-    "Difference between AI and ML?",
-    "What is Random Forest?",
-    "Explain Deep Learning."
-]
+questions = {
+    "Python": [
+        "What is OOP?",
+        "What is Inheritance?",
+        "What is Polymorphism?"
+    ],
+
+    "Machine Learning": [
+        "What is Machine Learning?",
+        "What is Overfitting?"
+    ],
+
+    "HR": [
+        "Tell me about yourself"
+    ]
+}
+
+
+
+print('MODEL LOADED')
